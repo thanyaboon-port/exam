@@ -44,6 +44,7 @@ try:
         target_path = config[table]['target_path'].lower()
         partition_column = config[table]['partition_column'].lower()
         write_mode = config[table]['write_mode'].lower()
+        print(source_table_name, source_data_file_format, source_data_path, transform_file_path, transform_file_name, target_file_format, target_path, partition_column, write_mode)
     except Exception as e:
         print(e)
         print("Value of {} in {}/{} is mistaked.".format(table, config_file_path, config_file_name))
