@@ -21,7 +21,8 @@ def write_dataframe_to_hdfs(df_final, write_mode, partition_column, target_path,
             print("Target file format isn't CSV or Parquet")
             exit(1)    
     print("Write data success.")
-
+    
+print(sys.argv)
 if len(sys.argv) != 3:
     print("Parameter isn't complete")
     exit(1)
