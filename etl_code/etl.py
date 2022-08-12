@@ -36,7 +36,7 @@ try:
 
     try:
         source_table_name = config[table]['source_table_name'].lower()
-        source_data_file_format = config[table]['source_table_name'].lower()
+        source_data_file_format = config[table]['source_data_file_format'].lower()
         source_data_path = config[table]['source_data_path'].lower()
         transform_file_path = config[table]['transform_file_path'].lower()
         transform_file_name = config[table]['transform_file_name'].lower()
