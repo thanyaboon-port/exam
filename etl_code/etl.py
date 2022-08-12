@@ -22,7 +22,6 @@ def write_dataframe_to_hdfs(df_final, write_mode, partition_column, target_path,
             exit(1)    
     print("Write data success.")
     
-print(sys.argv[1)
 if len(sys.argv) != 4:
     print("Parameter isn't complete")
     exit(1)
