@@ -1,6 +1,7 @@
 #!/bin/sh
 
 set -e  # stop immediately on any error
+psql -c 'create database linemanwongnai;'
 for script in create_table_order_detail.sql create_table_restaurant_detail.sql
 do
   echo "processing $script"
